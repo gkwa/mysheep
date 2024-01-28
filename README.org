@@ -1,7 +1,23 @@
 * mysheep
+** purpose: learn how to validate json
+** gpt
+*** validate the case where a field is missing
 
-This is a description of my mysheep.
+Suppose incoming json does not contain field im my struct. How can I
+validate this case?
 
-** Usage
+*** validate the case where the incomfing json contains additional fields I didn't expect
 
-To use my project, run this command: ./mysheep --verbose
+This is not solved yet.
+
+Suppose incoming json contains field thats not in our sturct.
+
+Using this:
+github.com/go-playground/validator/v10
+
+lets throw error if that happens
+
+** summary
+
+https://github.com/go-playground/validator?tab=readme-ov-file#package-validator
+
