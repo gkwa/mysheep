@@ -1,0 +1,7 @@
+* mysheep
+
+This is a description of my mysheep.
+
+** Usage
+
+To use my project, run this command: ./mysheep --verbose
