@@ -9,7 +9,7 @@ import (
 
 type MyStruct struct {
 	Field1 string `json:"field1" validate:"required"`
-	Field2 int    `json:"field2" validate:"gte=0"`
+	Field2 int    `json:"field2" validate:"gte=42"`
 }
 
 func RunSimeleJson() error {
@@ -33,9 +33,6 @@ func RunSimeleJsonWithJSONData(jsonData string) error {
 	if err := validateStruct(myInstance); err != nil {
 		return fmt.Errorf("error validating JSON: %v", err)
 	}
-
-	fmt.Printf("Field1: %s\n", myInstance.Field1)
-	fmt.Printf("Field2: %d\n", myInstance.Field2)
 
 	return nil
 }
